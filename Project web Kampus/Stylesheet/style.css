@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+}
+
+.main-bar {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    font-family: cursive;
+    z-index: 1;
+}
+
+.title {
+    color: black;
+    font-size: 1.1rem;
+    font-style: italic;
+    cursor: default;
+}
+
+.E-title {
+    margin-left: 2px;
+    color: orange;
+    font-weight: bolder;
+}
+
+.navigations-bar .navbar-items {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.navbar-items li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.main-bar a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.main-bar a:active {
+    color: orangered;
+}
+
+.bar {
+    font-size: 1.1rem;
+    display: none;
+}
+
+.bar a {
+    color: black;
+}
+
+
+/* Mulai mengedit main bar*/
+
+
+/* Left */
+.content {  
+    width: 100%;
+    height: 99vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content section {
+    width: 48%;
+    height: 100%;
+}
+
+.c-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.t-content {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: Poppins;
+    font-size: 1.2rem;
+}
+
+.main-content {
+    font-family: cursive;
+}
+
+.M-Univ {
+    color: #435B66;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 0px 5px;
+    color: black;
+}
+
+.M-Univ:hover {
+    color: #2D4356;
+}
+
+.M-Univ:active {
+    text-decoration: none;
+}
+
+.social-media ul{
+    display: flex;
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 1em;
+    gap:20px;
+}
+
+.social-media a{
+    color: black;
+    margin-right: 5px;
+    text-decoration: none;
+    background-color: rgb(0, 228, 0);
+    padding: 5px 10px;
+    border-radius: 10px 0px 10px 0px;
+    font-family: cursive;
+    font-size: 1rem;
+}
+
+.social-media a i{
+    margin-right: 5px;
+}
+
+.social-media a:hover {
+    background-color: orange;
+    color: black;
+}
+
+.social-media a:active {
+    background-color: orangered;
+    color: white;
+}
+
+/* Left End */
+
+/* Right */
+
+.c-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-container {
+    width: 80%;
+    height: 70%;
+    margin-top: 70px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 10% 5px 10% 5px;
+    position: relative;
+    z-index: 0.5;
+}
+
+.s-image {
+    height: 120%;
+    position: absolute;
+    bottom: 0px;
+    left: 23%;
+}
+
+/* Education Page Start*/
+
+.Education {
+    width: 100%;
+    height: 85vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Education section {
+    width: 48%;
+    height: 100%;
+}
+
+.E-left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.E-left div {
+    width: 100%;
+    height: 50%;
+}
+
+.c-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.G-img1 {
+    position: absolute;
+    display: block;
+    height: 100%;
+}
+
+.G-img2 {
+    position: absolute;
+    display: block;
+    height: 100%;
+}
+
+.E-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.E-right .content {
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.E-right .content h2 {
+    font-family: Poppins;
+}
+
+.E-right .content p {
+    font-family: cursive;
+}
+
+.Btn-2 {
+    padding: 10px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Education Page End*/
+
+/* Footer Start*/
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #2D4356;
+    margin-top: 10px;
+}
+/* Footer End*/
+
+
+/* Potrait Phone Start*/
+/* Resonsive navbar start */
+@media screen and (max-width:576px){
+    .main-bar {
+        justify-content: center;
+    }
+
+
+
+    .navigations-bar .navbar-items {
+        display: none;
+        list-style-type: none;
+        gap: 20px;
+        font-size: 1.2rem;
+    }
+/* Resonsive navbar End */
+
+
+/* Content Start*/
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .t-content {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+
+    .social-media a{
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+    }
+
+    .s-container {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        margin-top: 70px;
+        box-shadow: 4px 4px 4px 0.5px rgba(0, 0, 0, 0.7);
+        position: relative;
+    }
+
+    .s-image {
+        position: absolute;
+        left: 15%;
+    }
+
+/* Content Start*/
+
+/*Education Start*/
+
+.Education {
+    height: 200%;
+    flex-direction: column;
+}
+
+E.left {
+    z-index: 20;
+}
+
+.Education .E-right {
+    margin-top: 50px;
+}
+
+/*Education End*/
+}
+
+
+/* Potrait Phone End*/
+
+@media screen and (min-width:576) and (max-width:768px) {
+    .main-bar {
+        background-color: deeppink;
+    }
+}
+
+
+/* Right End*/
+
+/* Main bar Selesai*/
